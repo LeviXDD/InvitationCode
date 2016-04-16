@@ -5,6 +5,20 @@
 //  Created by 海涛 黎 on 16/4/16.
 //  Copyright © 2016年 Levi. All rights reserved.
 //
+/*
+# InvitationCode
+主要目的是将用填写的邀请码自动转换为大写字母，方便用户使用。
+
+思路：
+1.创建一个textfield用于记录用户输入的数据，但是此textfield应放在一个用户看不到的地方。
+
+2.通过拼接六个label并加上手势事件来让textfield成为第一响应者。
+
+3.通过textfield的代理事件来自动逐个将textfield中的字母用ASC II来全部转换为大写。
+
+整体思路很简单，但是当时做的时候在删除第一个字母的时候有点小问题，在输入第一个字母的时候会闪烁一下，当时为了赶快完成需求，也没有去追求这些细节。
+今天只是突然想起来，把这个上传上来，代码稍微有些混乱，如有幸我的这段代码被人阅读，还望见谅。
+ */
 
 #import "ViewController.h"
 
